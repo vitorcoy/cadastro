@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Produto </title>
+	<meta charset="UTF-8">
+</head>	
+<body>
+		<h3> Inclusão de Produtos </h3>
+		<form method="POST" action="gerencia.php">
+			<input type="hidden" name="operacao" value="inclusao">
+			<label> Código do Produto
+				<input type="text" name="codigo_produto" size="5"> 
+			</label>
+			<label> Nome do Produto
+				<input type="text" name="nome_produto" size="20"> 
+			</label>
+			<input type="submit" value="Inserir" name="Inserir">
+		</form>
+		
+		<h3> Exclusão de Produtos </h3>
+		<form method="POST" action="gerencia.php">
+			<input type="hidden" name="operacao" value="exclusao">
+			<label> Código do Produto
+				<input type="text" name="codigo_produto" size="5"> 
+			</label>
+			<input type="submit" value="Inserir" name="Inserir">
+		</form>
+		
+</body>
+</html>
