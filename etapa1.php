@@ -1,4 +1,13 @@
+
+
+
 <html>
+    
+    <form method="POST" action="etapa2.php">
+        <p>Nome: <input type="text" name="nome" size="20"></p>
+           <input type="submit" value="Prosseguir" name="prosseguir">
+    </form>
+    
 <head> 
 	<title>Desenvolvendo Websites com PHP</title> 
 	<meta charset="UTF-8">
