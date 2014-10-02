@@ -1,13 +1,41 @@
+<?php
+ $nome = $_POST["nome"];
+ $email = $_POST["email"]; 
+ $profissao = $_POST["profissao"];
+ $datanascimento = $_POST["datanascimento"];
+ $erro = 0;
+ 
+ 
+ if (empty($nome) OR strstr($nome, ' ')== FALSE) {
+    $mensagem = "Favor digitar seu nome corretamente.<br>"; 
+    $erro=1;
+ }
+ 
+ if (strlen($email) < 8 || strstr($email, '@') == FALSE) {
+    $mensagem = "Favor digitar o seu e-mail corretamente.<br>";
+    $erro=1;
+ }
+ 
+ if (empty($profissao) == FALSE) {
+    $mensagem = "Favor digitar sua profissão.<br>"; 
+    $erro=1;
+ }
+ 
+ if (empty($datanascimento) == FALSE) {
+    $mensagem = "Favor digitar sua profissão.<br>"; 
+    $erro=1;
+ }
+ 
+ 
+ if ($erro==0) {
+    $mensagem = "Todos os campos foram digitados corretamente.";
+ }
 
+
+?>
 
 
 <html>
-    
-    <form method="POST" action="etapa2.php">
-        <p>Nome: <input type="text" name="nome" size="20"></p>
-           <input type="submit" value="Prosseguir" name="prosseguir">
-    </form>
-    
 <head> 
 	<title>Desenvolvendo Websites com PHP</title> 
 	<meta charset="UTF-8">
@@ -57,5 +85,6 @@
  			</center>
 		</div> 
 	</form> 
+                    <?php echo $mensagem ?>
 </body> 
 </html> 

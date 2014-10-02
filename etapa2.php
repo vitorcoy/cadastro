@@ -1,12 +1,11 @@
 <?php
-
     $nome = $_POST["nome"];
-    $nome = $_POST["email"];
-    $nome = $_POST["datanascimento"];
-    $nome = $_POST["sexo"];
-    $nome = $_POST["profissao"];
-    $nome = $_POST["datanascimento"];
+    $email =$_POST["email"];
+    $datanascimento = $_POST["datanascimento"];
+    $sexo = $_POST["sexo"];
+    $profissao = $_POST["profissao"];
 ?>
+
 
 <html>
 <head>
@@ -45,5 +44,7 @@
 			<p><input type="submit" value="Prosseguir &gt;&gt;" name="prosseguir"></p> 
  		</center></div> 
 	</form> 
+        
+                
 </body> 
-</html> 
+</html>
